@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>| Snake Game | </title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<h1 id="title">SNAKE GAME</h1>
-	<div class="Maze"></div>
-	<div class="Controls">
-		<label class="result">Score</label>
-		<button class="start">Start</button>
-		<button class="stop hidden">Stop</button>
-		<button class="reload hidden">Reload</button>
-	</div>
-
-</body>
-	<script
-	src="https://code.jquery.com/jquery-3.3.1.min.js"
-	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	crossorigin="anonymous"></script>
-	<script src="snake.js"></script>
-	<script src="maze.js"></script>
+  <head>
+    <title>Snake Game - Akash Meshram</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">The Snake</h1>
+    <div class="mazeShadow"><div class="Maze"></div></div>
+    <div class="Controls">
+      <div class="resultContainer">
+        <span>Score :</span>
+        <span class="result">0</span>
+      </div>
+      <button class="start">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 25 25"
+          class="play"
+        >
+          <path d="M8 5v14l11-7z"></path>
+        </svg>
+        <span>Start</span>
+      </button>
+      <button class="stop hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 20 25"
+          class="stop"
+        >
+          <path d="M6 6h12v12H6z"></path>
+        </svg>
+        <span>Stop</span>
+      </button>
+      <button class="reload hidden">Reload</button>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+  <script src="snake.js"></script>
+  <script src="maze.js"></script>
 </html>
